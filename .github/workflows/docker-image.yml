@@ -18,8 +18,8 @@ jobs:
       uses: docker/login-action@v1 
       with:
         registry: ghcr.io
-        username: "rednakse"
-        password: ${{ secrets.PACKAGES }}
+        username: ${{ github.actor }}
+        password: ${{ secrets.GITHUB_TOKEN }
 
     - name: "Build&Deploy template-server"
       uses: docker/build-push-action@v2
