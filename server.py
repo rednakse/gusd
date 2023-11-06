@@ -56,9 +56,9 @@ async def t_genshin_update(_):
 async def update_resin(_):
     logger.info("Genshin update task")
 
-    uid = os.getenv('GENSHIN_UID') # 700052312  # int
-    ltoken = os.getenv('GENSHIN_LTOKEN') # "m8tRQKWEkVppIxeiAKIKKvQx5jSuNK3XmZYCDtoe"  # str
-    ltuid = os.getenv('GENSHIN_LTUID') # "7846854"  # str
+    uid = os.getenv('GENSHIN_UID')
+    ltoken = os.getenv('GENSHIN_LTOKEN')
+    ltuid = os.getenv('GENSHIN_LTUID')
 
     USER_AGENT = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
                 "(KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36")
